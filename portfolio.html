@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Шапка  -->
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo logo-header link" href="./index.html"
+          >Web<span class="logo--darck">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link " href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact__list list">
+          <li class="contact__item">
+            <a class="contact__link link" href="mailto:info@devstudio.com">
+              <svg class="icon contact__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__link link" href="tel:+380961111111">
+              <svg class="icon contact__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-tel"></use>
+                </svg>+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter__list list">
+            
+            <li class="filter__item">
+              <button class="filter__btn btn" type="button">Все</button>
+            </li>
+            
+            <li class="filter__item">
+              <button class="filter__btn btn" type="button">Веб-сайты</button>
+            </li>
+            
+            <li class="filter__item">
+              <button class="filter__btn btn" type="button">Приложения</button>
+            </li>
+            
+            <li class="filter__item">
+              <button class="filter__btn btn" type="button">Дизайн</button>
+            </li>
+            
+            <li class="filter__item">
+              <button class="filter__btn btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          
+          <ul class="examples__list list">
+            <li class="examples__item">
+                <a class="examples__link link" href="">
+                    <div class="examples__overlay">
+                      <img
+                        src="./images/portfolio-img1.jpg"
+                        alt="Команда разработчиков"
+                        width="370"
+                      />
+                      <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                    </div>
+                  <div class="examples__content">
+                    <h3 class="examples__title title">Технокряк</h3>
+                    <p class="examples__text">Веб-сайт</p>
+                  </div>
+                </a>
+              
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img2.jpg"
+                    alt="Два боскитболиста"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Бросил диких даже, всеми, прямо снова это семантика но ручеек дорогу до наш пояс агентство. По всей знаках они даже языком!</p>
+                </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="examples__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img3.jpg"
+                    alt="Рыба-логотип ресторана Seafood"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Власти обеспечивает решила не это образ даль заглавных, первую жаренные, напоивший гор щеке одна рот прямо! Несколько буквоград возвращайся на берегу!</p>
+                </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">Ресторан Seafood</h3>
+                  <p class="examples__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img4.jpg"
+                    alt="Наушники"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Страну осталось обеспечивает мир толку, переписывается залетают все своих, жаренные над подзаголовок переулка лучше раз рыбного букв если ведущими одна?</p>
+                </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">Проект Prime</h3>
+                  <p class="examples__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img5.jpg"
+                    alt="Две коробочки"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал переулка текстов что раз пояс возвращайся журчит залетают вдали, заголовок ручеек выйти курсивных страну первую о ipsum решила от всех?</p>
+                </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">Проект Boxes</h3>
+                  <p class="examples__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img6.jpg"
+                    alt="Монитор с изображением сайта"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Запятой великий первую образ переписали даже которой, единственное жаренные составитель свой меня, имени, безопасную собрал семантика повстречался текст! Пор, которой!</p>
+                </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="examples__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img7.jpg"
+                    alt="Брошура издания Limited Editionа"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Все не встретил вскоре диких его языком реторический журчит она одна букв необходимыми, себя оксмокс страна семь бросил но заголовок!</p>
+              </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">Издание Limited Edition</h3>
+                  <p class="examples__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img8.jpg"
+                    alt="Этикетка"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Заманивший злых имеет ты. Себя ее, оксмокс имени курсивных наш, собрал запятых языкового предложения рекламных города прямо продолжил? Проектах, по всей.</p>
+                </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">Проект LAB</h3>
+                  <p class="examples__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="examples__overlay">
+                  <img
+                    src="./images/portfolio-img9.jpg"
+                    alt="Ноутбук с запущеным приложением Growing Business"
+                    width="370"
+                  />
+                  <p class="overlay__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Знаках последний заголовок заглавных моей свой проектах всеми семантика, рекламных если о предупреждал его своих коварных власти она запятых города.</p>
+                </div>
+                <div class="examples__content">
+                  <h3 class="examples__title title">Growing Business</h3>
+                  <p class="examples__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+<footer class="footer">
+      <div class="container footer-container">
+        <div class="address-wrap">
+          <a class="logo link logo-footer" href="index.html"
+            >Web<span class="logo--light">Studio</span></a
+          >
+          <address class="address">
+            <a
+              class="address__link link"
+              target="_blank"
+              rel="noopenner noreferrer"
+              href="https://goo.gl/maps/iMPZcJY4s92VyZQC9"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+            <ul class="footer__list list">
+              <li class="footer__item">
+                <a class="footer__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-wrap">
+          <h2 class="title footer__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="social__list footer-social-list list">
+            <li class="social__item">
+              <a class="social__link social__link--light link" href="">
+                <svg
+                  class="icon__social icon-social--light"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--light link" href="">
+                <svg
+                  class="icon__social icon-social--light"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--light link" href="">
+                <svg
+                  class="icon__social icon__social--light"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--light link" href="">
+                <svg
+                  class="icon__social icon__social--light"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Форма подписки -->
+        <form class="form-subscriptions" name="subscription">
+          <p class="footer__title">Подпишитесь на рассылку</p>
+          <div class="form-wrap">
+            <label class="form__label">
+              <input
+                class="form-subscriptions__input"
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="top__btn form__button btn" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
