@@ -1,5 +1,6 @@
 // UTILS
 @import './utils/variables';
+@import './utils/placeholder';
 @import './utils/visually-hidden';
 
 // BASE
@@ -7,6 +8,7 @@
 
 // COMPONENTS
 @import './components/container';
+@import './components/mobile-menu';
 @import './components/section';
 @import './components/logo';
 @import './components/section-title';

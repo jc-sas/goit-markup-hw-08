@@ -1,3 +1,5 @@
+// ===== глобальные стили ===== //
+
 body {
   margin: 0;
   font-family: var(--primaryFont), Verdana, Geneva, Tahoma, sans-serif;
@@ -9,6 +11,16 @@ body {
   color: var(--textColor);
 }
 
+.title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--darckColor);
+}
+
+
+// ======== Сброс стилей ======== //
 h1,
 h2,
 h3,
@@ -32,12 +44,15 @@ img {
 }
 
 .link {
+  display: inline-block;
   text-decoration: none;
+  color: inherit;
 }
 
 .btn {
-  appearance: none;
+  display: block;
+  padding: 0;
+  background-color: transparent;
   border: 0;
-  border-radius: 4px;
   cursor: pointer;
 }

@@ -1,28 +1,63 @@
+// .logo {
+//   font-family: Raleway;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--logoColor);
+// }
+
+// .logo-header {
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   margin-right: 93px;
+// }
+
+
+
+// .logo--darck {
+//   color: var(--logoColorDarck);
+// }
+
+
+
 .logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--logoColor);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--logoColor);
+}
+
+.logo--darck {
+    color: var(--logoColorDarck);
 }
 
 .logo-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+    @media screen and (min-width: 480px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
+}
+
+.logo--light {
+  color: var(--logoColorLight);
 }
 
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
-}
-
-.logo--darck {
-  color: var(--logoColorDarck);
-}
-
-.logo--light {
-  color: var(--logoColorLight);
 }

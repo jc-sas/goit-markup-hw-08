@@ -1,3 +1,7 @@
+.social-wrap {
+  margin-bottom: 60px;
+}
+
 .social__list {
   display: flex;
   justify-content: center;
@@ -7,5 +11,5 @@
     &:not(:last-child) {
         margin-right: 10px;
     }
-  
 }
+
