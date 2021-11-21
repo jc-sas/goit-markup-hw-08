@@ -1,35 +1,63 @@
-// .filter__list {
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 50px;
-// }
+.filter__list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 
-// .filter__item {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+        }
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }  
+}
 
-//   &:not(:first-child) {
-//     margin-left: 8px;
-//   }
-  
-// }
+.filter__item {
+    &:nth-child(-2n+3) {
+        margin-right: 8px;
+    }
+    &:nth-child(-n+2),
+    &:nth-child(4) {
+        @media screen and (max-width: 767px) {
+            margin-right: 8px;
+        }
+    }
 
-// .filter__btn {
-//   padding: 6px 22px;
-//   font-weight: 500;
-//   font-size: var(--secondFontSize);
-//   line-height: 1.62;
-//   text-align: center;
-//   background-color: var(--secondaryBgColor);
-//   transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
-//     box-shadow 250ms var(--cubic);
-//   cursor: pointer;
+    &:nth-child(-n+3){
+        @media screen and (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+}
 
-//   &:hover,
-//   &:focus {
-//     color: var(--lightColor);
-//     background-color: var(--accentColor);
-//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//      0px 2px 2px rgba(0, 0, 0, 0.12);
-//   }
-// }
+    &:not(:last-child) {
+        @media screen and (min-width: 480px) {
+            margin-right: 8px;
+        }
+    }    
+}
 
+.filter__btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: var(--secondFontSize);
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--secondaryBgColor);
+  border-radius: 4px;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
+  cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: var(--lightColor);
+    background-color: var(--accentColor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.filter__btn--active {
+    color:var(--lightColor);
+    background-color: var(--accentColor);
+}
