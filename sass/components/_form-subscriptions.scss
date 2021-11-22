@@ -1,6 +1,6 @@
 .form-subscriptions {
   @media screen and (min-width: 1200px) {
-    margin-left: auto;    
+    margin-left: auto;
   }
 }
 
@@ -24,21 +24,21 @@
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border-color 250ms var(--cubic);
-  
+
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
   }
-  
+
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
   }
-  
-    &:focus,
-    &:hover {
-      outline: none;
-      border-color: var(--accentColor);
-    }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: var(--accentColor);
+  }
 }
 
 .form__label {

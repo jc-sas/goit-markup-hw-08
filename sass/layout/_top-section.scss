@@ -1,71 +1,125 @@
-// .top__section.overlay {
-//   max-width: 1600px;
-//   background-image: linear-gradient(
-//       to top,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 57, 0.4)
-//     ),
-//     url(../images/bg-img.jpg);
-//   background-position: center;
-//   background-size: cover;
-// }
+.top__section.overlay {
+  max-width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 57, 0.4)
+    ),
+    url(../images/hero/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  @media screen and (min-divace-pixel-ratio: 2),
+    (min-resolition: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 57, 0.4)
+      ),
+      url(../images/hero/hero@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 57, 0.4)
+      ),
+      url(../images/hero/hero-tablet.jpg);
+
+    @media screen and (min-divace-pixel-ratio: 2),
+      (min-resolition: 192dpi),
+      (min-resolution: 2dppx) {
+      max-width: 768px;
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 57, 0.4)
+        ),
+        url(../images/hero/hero-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 57, 0.4)
+      ),
+      url(../images/hero/hero-desktop.jpg);
+
+    @media screen and (min-divace-pixel-ratio: 2),
+      (min-resolition: 192dpi),
+      (min-resolution: 2dppx) {
+      max-width: 1600px;
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 57, 0.4)
+        ),
+        url(../images/hero/hero-desktop@2x.jpg);
+    }
+  }
+}
 
 .top__section {
-    background-color: var(--darkBgColor);
+  background-color: var(--darkBgColor);
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-    @media screen and (min-width: 480px) {
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-}
-.overlay {
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .top__title {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color:var(--lightColor);
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--lightColor);
 
-    @media screen and (min-width: 768px) {
-        max-width: 360px;        
-    } 
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        max-width: 696px;
-        font-size: 44px;
-        line-height: 1.5;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.5;
+  }
 }
 
 .top__btn {
-    margin: 0 auto;
-    width: 200px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--lightColor);
-    background-color: var(--accentColor);
-    border-radius: 4px;
-    transition: color 250ms var(--cubic), box-shadow 250ms var(--cubic);
-    
-    &:hover,
-    &:focus {
-        background-color: var(--hoverBtnColor);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    } 
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--lightColor);
+  background-color: var(--accentColor);
+  border-radius: 4px;
+  transition: color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hoverBtnColor);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

@@ -14,43 +14,39 @@
 //   margin-right: 93px;
 // }
 
-
-
 // .logo--darck {
 //   color: var(--logoColorDarck);
 // }
 
-
-
 .logo {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--logoColor);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--logoColor);
 }
 
 .logo--darck {
-    color: var(--logoColorDarck);
+  color: var(--logoColorDarck);
 }
 
 .logo-header {
-    @media screen and (min-width: 480px) {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-right: 88px;
-        padding-top: 26px;
-        padding-bottom: 26px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-right: 93px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo--light {

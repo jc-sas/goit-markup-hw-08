@@ -1,11 +1,7 @@
 .work {
-    // @media screen and (min-width: 480px) {
-    //     display: none;
-    // }
-
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 
@@ -18,7 +14,7 @@
 }
 
 .work__item {
-  &:not(:first-child){
+  &:not(:first-child) {
     margin-left: 30px;
   }
 }
