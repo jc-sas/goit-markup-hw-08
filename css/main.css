@@ -140,12 +140,18 @@ img {
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 38px 14px;
   background-color: var(--lightBgColor);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    padding: 48px 40px;
+  }
 }
 
 .mobile-menu.is-open {
