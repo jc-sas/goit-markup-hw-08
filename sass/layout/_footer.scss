@@ -10,18 +10,24 @@
 }
 
 .footer-tablet {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
-        justify-content: space-around;        
+        justify-content: space-around;               
     }
 }
 
-.address {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;    
+.tablet-inner {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
-    
+}
+
+.address {   
     @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: column;
